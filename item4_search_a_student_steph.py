@@ -36,37 +36,9 @@ def create_new_student_data_file():
 def update_an_existing_student_data_file():
     pass
 
-# Need to work on write_to_file() to finish the remove_a_student(), need to scrum first sjb
+#sjb see items3_remove_a_student.py for this block of code
 def remove_a_student(student_dic):
-    """ Allow user to remove a student, by entering in a 
-    student ID/key from the student database = student_dic"""
 
-    student_id = input("To remove a student record from the roster/file, please inter in an ID, eg. '1234': ") 
-
-    if student_id in student_dic:
-        student_removed = student_dic.pop(student_id)
-        
-
-        # here we need to over-right csv file
-            # call the write to funtion
-
-        return "Student your removed from the roster/file: ", student_removed
-
-    else:
-        while True:
-            print("So sorry. It looks like that student ID does not exist.")
-            print("Please select from the following options:")
-            print("1 - Try to remove a student again")
-            print("0 - Exit the 'remove a student' option and quit")
-
-            option = int(input("Please choose one of the menu options: "))
-    
-            if option == 0:
-                print("You have chosen to discontinue to remove a student and to exit, bye bye!")
-                break
-
-            if option == 1:
-                remove_a_student(student_dic)
 
 # sjb
 def search_a_student(student_dic):
@@ -206,7 +178,6 @@ def main():
 
 
     student_data_manager(student_dic)
-
 
 
 
