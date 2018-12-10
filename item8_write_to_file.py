@@ -209,7 +209,6 @@ def main():
     with open("existing_student_data.csv", "r") as fileobj:
         student_dic = read_csv_and_create_dic(fileobj)
 
-
     student_data_manager(student_dic)
 
 
