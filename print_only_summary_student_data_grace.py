@@ -36,12 +36,11 @@ def create_new_student_data_file():
 def update_an_existing_student_data_file():
 	pass
 
-
-def remove_a_student():
+def remove_a_student(student_dic):
 	pass
 
 
-def search_a_student():
+def search_a_student(student_dic):
 	pass
 
 
@@ -137,9 +136,9 @@ def student_data_manager(student_dic):
 		elif option == 2:
 			update_an_existing_student_data_file()
 		elif option == 3:
-			remove_a_student()
+			 remove_a_student(student_dic)
 		elif option == 4:
-			search_a_student()
+			search_a_student(student_dic)
 		elif option == 5:
 			print_only_summary_of_student_data(student_dic)
 		elif option == 6:
